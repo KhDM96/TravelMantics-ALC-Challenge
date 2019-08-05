@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/holidayImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/priceRecyclerView"
+        app:layout_constraintBottom_toBottomOf="@id/descRecyclerView"/>
+
+    <TextView
+        android:id="@+id/titleRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Holiday in the bahamas"
+        android:textColor="@color/darkElectricBlue"
+        android:fontFamily="@font/abhaya_libre"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/priceRecyclerView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/holidayImage"
+        app:layout_constraintTop_toBottomOf="@id/priceRecyclerView"/>
+
+    <TextView
+        android:id="@+id/priceRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="300"
+        android:textColor="@color/airForceBlue"
+        android:fontFamily="@font/abhaya_libre"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:drawableStart="@drawable/dollar_symbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/holidayImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@color/darkElectricBlue"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Short paragraphs are easier to read and understand. Writing experts recommend paragraphs of no more than 150 words in three to eight sentences. Paragraphs should never be longer than 250 words. Using short paragraphs is an ideal way to open up your writing and create white space."
+        android:textSize="16sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/priceRecyclerView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/holidayImage"
+        app:layout_constraintTop_toBottomOf="@id/titleRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

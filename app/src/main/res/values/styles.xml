@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/airForceBlue</item>
+        <item name="colorAccent">@color/darkElectricBlue</item>
+        <!--<item name="android:textColorSecondary">@color/white</item>-->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:textViewStyle">@style/CustomTextViewFont</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAppearance">@style/CustomTextViewFont</item>
+    </style>
+
+    <!--<style name="CustomTheme" parent="AppTheme">-->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    <!--</style>-->
+
+    <style name="CustomTextViewFont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/abhaya_libre</item>
+    </style>
+
+</resources>

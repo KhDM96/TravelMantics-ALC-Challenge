@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00754b</color>
+    <color name="colorPrimaryDark">#00754b</color>
+    <color name="colorAccent">#00a86b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="airForceBlue">#5d8aa8</color>
+    <color name="aliceBlue">#f0f8ff</color>
+    <color name="charcoal">#36454f</color>
+    <color name="darkElectricBlue">#536878</color>
+
+
+</resources>
